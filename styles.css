@@ -1,0 +1,177 @@
+@import url("https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;500;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+
+#main {
+  position: relative;
+  height: 100%;
+  color: #fff;
+}
+
+.container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: url("./money-2.jpg") no-repeat center center/cover;
+  z-index: -1;
+}
+
+.container:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.bg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  background-size: cover;
+}
+
+.navbar {
+  position: absolute;
+  z-index: 9999;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 100px;
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.navbar h1 {
+  cursor: pointer;
+  font-size: 26px;
+  transition: transform 0.5s;
+  text-transform: uppercase;
+}
+
+.navbar h1:hover {
+  color: #ff5252;
+}
+
+.navbar ul {
+  list-style: none;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: #fff;
+  margin-left: 40px;
+  transition: transform 0.5s;
+  font-size: 100%;
+}
+
+.navbar ul li a:hover {
+  border-bottom: 1px solid#ff5252;
+  color: #ff5252;
+  padding-bottom: 5px;
+  font-weight: 700;
+}
+
+.page-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.page-content h1 {
+  text-align: center;
+  font-size: 36px;
+  margin-bottom: 12px;
+}
+
+.page-content h3 {
+  text-align: center;
+  font-size: 18px;
+  margin-bottom: 35px;
+}
+
+
+.page-content a {
+  text-decoration: none;
+  color: #ffffff;
+  display: inline;
+  background-color: #ff5252;
+  padding: 10px 30px;
+  border: none;
+  border-radius: 3px;
+}
+
+.page-content a:hover {
+  transition: transform 0.3s;
+  background-color: #e82525;
+}
+
+.about{
+  height: 300px;
+  margin: 40px;
+  width: 80%;
+}
+.about-p{
+  font-size: 30px;
+  font-weight: bold;
+  margin: 10px 0 20px 0;
+}
+.about_des{
+  margin-top: 30px;
+  margin-bottom: 30px;
+
+}
+footer{
+  margin: 30px;
+  height: 20px;
+}
+
+@media only screen and (max-width: 755px) {
+  .navbar {
+    flex-direction: column;
+    padding: 20px 20px;
+  }
+
+  .navbar h1 {
+    margin-bottom: 15px;
+  }
+
+  .navbar ul li a {
+    margin-left: 20px;
+    font-size: 15px;
+  }
+
+  .page-content {
+    padding: 0 20px;
+  }
+
+  .page-content h1 {
+    font-size: 28px;
+  }
+
+  .page-content h3 {
+    font-size: 16px;
+  }
+  footer{
+    margin-top: 30%;
+  }
+}
